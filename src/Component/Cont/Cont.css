@@ -1,0 +1,13 @@
+.cont{
+    display: flex;
+    gap: 20px;
+    height: max-content;
+    width: max-content;
+
+}
+/* responsive */
+@media (max-width: 768px) {
+    .cont {
+      flex-direction: column; 
+    }
+  }

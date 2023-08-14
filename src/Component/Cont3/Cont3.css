@@ -1,0 +1,122 @@
+.cont3 {
+  width: 100%;
+  max-width: 36vw;
+  height: max-content;
+  margin-left: 1rem;
+  background-color: white;
+  border-radius: 1rem;
+  grid-auto-columns: 2rem;
+  margin-top: 1rem;
+}
+.cont3_top {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid palevioletred;
+}
+.cont3_top_left {
+  border-bottom: 1px solid palevioletred;
+}
+.cont3_center_data {
+  display: flex;
+  justify-content: space-around;
+}
+.cont3_center_data h4 {
+  width: 12rem;
+}
+.cont3_center_details p {
+  width: 20rem;
+  margin-left: 1rem;
+  margin-top: -0.1rem;
+}
+.cont3_center_details p Link {
+  text-decoration: none;
+}
+.cont3_bottom {
+  border-top: 1px solid lightgray;
+}
+.cont3_bottom_data {
+  display: flex;
+  justify-content: space-around;
+}
+.cont3_bottom_data h4 {
+  width: 8rem;
+}
+.cont3_bottom_details p {
+  width: 18rem;
+  margin-left: 1rem;
+  margin-top: -0.1rem;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .cont3 {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .cont3_top {
+    flex-direction: row;
+    align-items: center;
+  }
+  .cont3_top_left {
+    font-size: x-large;
+  }
+  .cont3_top_rights {
+    margin-top: none;
+    font-size: x-large;
+  }
+  .cont3_center_data,
+  .cont3_bottom_data {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cont3_center_data h4,
+  .cont3_bottom_data h4 {
+    margin-left: 0;
+  }
+
+  .cont3_center_details p,
+  .cont3_bottom_details p {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1290px) {
+  .cont3 {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .cont3_top {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cont3_top_left {
+    font-size: x-large;
+  }
+  .cont3_top_rights {
+    margin-top: none;
+    font-size: x-large;
+  }
+  .cont3_center_data,
+  .cont3_bottom_data {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cont3_center_data h4,
+  .cont3_bottom_data h4 {
+    margin-left: 0;
+  }
+
+  .cont3_center_details p,
+  .cont3_bottom_details p {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+}

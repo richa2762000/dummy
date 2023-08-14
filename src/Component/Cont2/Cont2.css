@@ -1,0 +1,156 @@
+.cont2 {
+  height: max-content;
+  width: 100%;
+  max-width: 36vw;
+  margin-left: 1rem;
+  border-radius: 1rem;
+  background-color: white;
+}
+.cont2_top_data {
+  display: flex;
+  justify-content: center;
+  width: 22rem;
+}
+.cont2_top_data .grps {
+  background-color: palevioletred;
+  color: white;
+  border: none;
+}
+.cont2_top h2 {
+  margin-left: 1rem;
+  padding-top: 1rem;
+}
+.cont2_top_data p {
+  border: 1px solid black;
+  width: 5rem;
+  border-radius: 2rem;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  margin-left: 0.2rem;
+}
+.cont2_center {
+  background-color: rgb(247, 245, 245);
+  height: 4rem;
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.cont2_center input {
+  height: 2rem;
+  width: 22rem;
+}
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 6rem;
+  transform: translateY(-50%);
+  width: 2rem;
+  height: 2rem;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/2048px-Search_Icon.svg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+}
+.cont2_center .plus {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.cont2_bottom {
+  height: 17rem;
+  overflow: auto;
+}
+.cont2_bottom1,
+.cont2_bottom2,
+.cont2_bottom3,
+.cont2_bottom4,
+.cont2_bottom5 {
+  display: flex;
+  height: 4rem;
+}
+.cont2_bottom_img img {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+}
+.cont2_bottom_data {
+  margin-left: 1rem;
+}
+.cont2_bottom_data .sale {
+  font-weight: bold;
+}
+.cont2_bottom_data .grp {
+  margin-top: -1rem;
+  color: rgb(138, 137, 137);
+}
+.cont2_bottom hr {
+  width: 32vw;
+}
+
+/* responsive */
+@media screen and (max-width: 768px) {
+  .cont2 {
+    max-width: 100%;
+    margin-left: 0;
+    height: auto;
+  }
+
+  .cont2_top {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cont2_top h2 {
+    text-align: center;
+  }
+  .cont2_top_data {
+    margin: auto;
+  }
+
+  .cont2_top_data p {
+    width: auto;
+    margin: 0.5rem;
+  }
+  .cont2_center input {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .search-icon {
+    right: 19rem;
+  }
+
+  .cont2_center .plus {
+    margin-left: 1rem;
+  }
+
+  .cont2_bottom {
+    height: auto;
+    overflow: visible;
+  }
+
+  .cont2_bottom1,
+  .cont2_bottom2,
+  .cont2_bottom3,
+  .cont2_bottom4,
+  .cont2_bottom5 {
+    flex-direction: row;
+  }
+  .cont2_bottom_data {
+    display: grid;
+    grid-template-columns: 13rem 10rem;
+  }
+  .cont2_bottom_data .grp {
+    margin-top: revert;
+  }
+  .cont2_bottom hr {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1290px) {
+  .cont2 {
+    width: 100%;
+    max-width: 100%;
+  }
+  .search-icon {
+    right: 8rem;
+  }
+}
